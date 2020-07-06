@@ -1,0 +1,11 @@
+<%= form_for(:session, url: login_path) do |f| %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email, class: 'form-control' %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, class: 'form-control' %>
+
+    <%= f.submit yield(:text_button), class: 'btn btn-primary' %>
+
+<% end %>

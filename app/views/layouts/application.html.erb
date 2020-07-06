@@ -11,6 +11,9 @@
 
   <body>
     <%= render 'layouts/nav' %>
+    <% if notice %>
+      <%= flash.notice %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
