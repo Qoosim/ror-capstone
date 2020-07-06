@@ -1,0 +1,19 @@
+<nav class="navbar-fixed-top navbar-expand-lg navbar-light navigation", style="background: #ebd59b;">
+    <%#= image_tag("asooke-1.jpg", height:"100", width:"70", class: "navbar-brand img") %>
+    <div class="logo-like">
+        <h3 class="title">LiVe+LoCaL</h3>
+        <div id="circle"></div>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><%= link_to 'Home', users_path, class: 'nav-link' %></li>
+        <li><%= link_to 'Books', '#', class: 'nav-link' %></li>
+        <li><%= link_to 'Fashion', '#', class: 'nav-link' %></li>
+        <li><%= link_to 'Sports', '#', class: 'nav-link' %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'Login', '#', class: 'nav-link'%></li>
+        <li><%= link_to 'Register', new_user_path, class: 'nav-link shift' %></li>
+        <li><%= link_to 'New Article', '#', class: 'nav-link' %></li>
+        <li><%#= link_to 'Log out', '#', method: :delete, class: 'nav-link shift' %></li>
+    </ul>
+</nav>
