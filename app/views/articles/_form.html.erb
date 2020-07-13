@@ -1,0 +1,14 @@
+<%= form_for(@article) do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+
+    <%= f.label :text %>
+    <%= f.text_area :text, class: 'form-control' %>
+
+    <%= f.label :image %>
+    <%= f.file_field :image, class: 'form-control' %>
+
+    <%= f.submit yield(:text_button), class: 'btn btn-primary' %>
+
+<% end %>

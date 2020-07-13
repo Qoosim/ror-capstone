@@ -5,7 +5,7 @@
         <div id="circle"></div>
     </div>
     <ul class="nav navbar-nav">
-        <li><%= link_to 'Home', users_path, class: 'nav-link' %></li>
+        <li><%= link_to 'Home', articles_path, class: 'nav-link' %></li>
         <li><%= link_to 'Books', '#', class: 'nav-link' %></li>
         <li><%= link_to 'Fashion', '#', class: 'nav-link' %></li>
         <li><%= link_to 'Sports', '#', class: 'nav-link' %></li>
@@ -13,7 +13,8 @@
     <ul class="nav navbar-nav navbar-right">
         <li><%= link_to 'Login', login_path, class: 'nav-link' if !logged_in? %></li>
         <li><%= link_to 'Register', new_user_path, class: 'nav-link shift' if !logged_in? %></li>
-        <li><%= link_to 'New Article', '#', class: 'nav-link' if logged_in? %></li>
+        <li><%= link_to 'New Article', new_article_path, class: 'nav-link' if logged_in? %></li>
+        <li><%= link_to current_user.name, user_path(current_user), class: 'nav-link' if logged_in? %></li>
         <li><%= link_to 'Log out', logout_path, method: :delete, class: 'nav-link shift' if logged_in? %></li>
     </ul>
 </nav>

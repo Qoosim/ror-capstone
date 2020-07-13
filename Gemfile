@@ -26,9 +26,14 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 # It provides a mini view framework for console applications
 gem 'hirb', '~> 0.7.3'
+# Rails gem to allowing records to be votable
+gem 'acts_as_votable', '~> 0.12.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+
+gem 'carrierwave', '~> 2.1'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <% @articles.each do |article| %>
+            <div class="col-lg-2 box">
+                <h3 class="title-link"><%=  link_to article.title, article_path(article), class: 'title-color' %></h3>
+                <h3 class="content"><%= article.text %></h3>
+                <%= image_tag article.image.url, height: "200", width: "200" %>
+
+                <%= link_to vote_article_path(article), method: :put do %>
+                    Vote 
+                    <%= article.get_upvotes.size %> | 
+                <% end %>
+                <%= link_to unvote_article_path(article), method: :put do %>
+                    Unvote
+                    <%= article.get_downvotes.size %>
+                <% end %>
+            </div>
+        <% end %>
+    </div>
+</div>

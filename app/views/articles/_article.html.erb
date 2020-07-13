@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <% @user.articles.each do |article| %>
+            <div class="col-lg-4 overall">
+                <div class="col-lg-6 border-test">
+                    <%= image_tag article.image.url, width: '195', height: '190' %>
+                </div>
+                <div class="col-lg-6 text-bg box">
+                    <h3 class="show-title"><%= article.title %></h3>
+                    <h3 class="show-content"><%= article.text %></h3>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
