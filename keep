@@ -1,0 +1,4 @@
+
+<% @categories.each do |category| %>
+    <%= link_to category.name, articles_path(:cate => category.id) %>
+<% end %>

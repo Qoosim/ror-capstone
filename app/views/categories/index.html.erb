@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <h2>All the Categories</h2>
+            <% @categories.each do |cat| %>
+                <p><%= link_to cat.name, cat %></p>
+            <% end %>  
+        </div>
+        <div class="colo-lg-3"></div>
+    </div>
+</div>
+

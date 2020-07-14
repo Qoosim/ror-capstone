@@ -10,12 +10,12 @@ class UsersController < ApplicationController
     end
 
     def show
-        @user = User.find(params[:id])
+        @user = fetch_user
         @articles = @user.articles
     end
 
     def edit
-        @user = User.find(params[:id])
+        @user = fetch_user
     end
 
     def create
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
             flash[:notice] = 'You have signed up successfully!'
             redirect_to @user
         else
-            render 'new'
+            render :new
         end
     end
 
@@ -33,5 +33,9 @@ class UsersController < ApplicationController
     private
         def user_params
             params.require(:user).permit(:name, :email, :password, :password_confirmation)
+        end
+
+        def fetch_user
+            User.find(params[:id])
         end
 end

@@ -1,0 +1,10 @@
+<h2>Show Page</h2>
+
+<ul>
+    <% @articles.each do |article| %>
+        <li><%= article.title %></li>
+    <% end %>
+</ul>
+
+<%= link_to 'Category Lists', categories_path %> | 
+<%= link_to 'New Category', new_category_path %>

@@ -84,23 +84,23 @@ body {
 
 .box {
     position: relative;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.title-link {
-    font-size: 16px;
+.category-link {
+    font-size: 14px;
+    font-weight: bolder;
     position: absolute;
-    top: -10px;
-    left: 20px;
-}
-
-.title-color {
-    color: red;
+    top: 0;
+    left: 30px;
+    text-decoration: underline;
 }
 
 .content {
     font-size: 18px;
     position: absolute;
-    top: 130px;
+    top: 150px;
     left: 20px;
 }
 
@@ -180,4 +180,9 @@ form {
 
 .leftimg {
     height: 98vh;
+}
+
+/* Category Form */
+.catego {
+    width: 35%;
 }

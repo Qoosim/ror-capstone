@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
 
     def index
         @articles = Article.all
+        @categories = Category.all
     end
 
     def new
@@ -10,11 +11,11 @@ class ArticlesController < ApplicationController
     end
 
     def show
-        @article = Article.find(params[:id])
+        @article = fetch_article
     end
 
     def edit
-        @article = Article.find(params[:id])
+        @article = fetch_article
     end
 
     def create
@@ -23,23 +24,37 @@ class ArticlesController < ApplicationController
             flash[:notice] = 'Article created successfully!'
             redirect_to article_path(@article)
         else
-            render 'new'
+            render :new
+        end
+    end
+
+    def update
+        @article = fetch_article
+        if @article.update(article_params)
+            flash[:notice] = 'Article updated!'
+            redirect_to @article
+        else
+            render :edit
         end
     end
 
     def upvote
-        @article = Article.find(params[:id])
+        @article = fetch_article
         @article.upvote_from current_user
     end
 
     def downvote
-        @article = Article.find(params[:id])
+        @article = fetch_article
         @article.downvote_from current_user
     end
 
 
     private
         def article_params
-            params.require(:article).permit(:title, :text, :image)
+            params.require(:article).permit(:title, :text, :image, :category_id)
+        end
+
+        def fetch_article
+            Article.find(params[:id])
         end
 end
