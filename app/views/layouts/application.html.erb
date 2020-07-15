@@ -10,10 +10,19 @@
   </head>
 
   <body>
-    <%= render 'layouts/nav' %>
-    <% if notice %>
-      <%= flash.notice %>
-    <% end %>
-    <%= yield %>
+    <div class="header">
+      <%= render 'layouts/nav' %>
+    </div>
+    <div class="message">
+      <% if notice %>
+        <%= flash.notice %>
+      <% end %>
+    </div>
+    <div class="main">
+      <%= yield %>
+    </div>
+    <div class="footer">
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>

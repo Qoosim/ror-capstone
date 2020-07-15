@@ -83,6 +83,8 @@ GEM
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.13.1)
+    font-awesome-sass (5.13.0)
+      sassc (>= 1.11)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hirb (0.7.3)
@@ -224,6 +226,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.4, >= 3.4.1)
   byebug
   carrierwave (~> 2.1)
+  font-awesome-sass (~> 5.13)
   hirb (~> 0.7.3)
   jbuilder (~> 2.7)
   listen (~> 3.2)
