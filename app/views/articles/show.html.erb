@@ -1,11 +1,23 @@
 <div class="container-fluid">
     <div class="row article-container">
-        <div class="col-lg-6">
-            <%= image_tag @article.image.url, width: '103%', height: '100%' %>
+        <div class="col-lg-6 side-image">
+            <%= image_tag @article.image.url, width: '103%', height: '368px' %>
         </div>
         <div class="col-lg-6 text-box">
             <h3 class="show-title"><%= @article.title %></h3>
+            <h3 class="art-author written-by">written by: <%= @article.user.name %></h3>
             <h3 class="show-content"><%= @article.text %></h3>
+
+            <div class="vote-button">
+                <%= link_to vote_article_path(@article), method: :put do %>
+                    Vote 
+                    <%= @article.get_upvotes.size %> | 
+                <% end %>
+                <%= link_to unvote_article_path(@article), method: :put do %>
+                    Unvote
+                    <%= @article.get_downvotes.size %>
+                <% end %>
+            </div>
         </div>
     </div>
     <br>
