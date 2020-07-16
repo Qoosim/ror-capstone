@@ -3,8 +3,8 @@
         <% @articles.each do |article| %>
             <div class="col-lg-3 box">
                 <h3 class="category-link"><%= link_to article.category.name, article.category, class: 'category' %></h3>
-                <h3 class="content"><%= article.title %></h3>
-                <%= image_tag article.image.url, height: "230", width: "293" %>
+                <h3 class="content-title"><%= article.title %></h3>
+                <%= image_tag article.image.url, height: "230", width: "293", class: 'all-images' %>
             </div>
         <% end %>
     </div>

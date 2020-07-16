@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+    before_action :logged_in_user
+
     include SessionsHelper
 
     def index
@@ -56,5 +58,12 @@ class ArticlesController < ApplicationController
 
         def fetch_article
             Article.find(params[:id])
+        end
+
+        def logged_in_user
+            unless logged_in?
+                flash[:notice] = "Try to login!"
+                redirect_to login_path
+            end
         end
 end

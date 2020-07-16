@@ -1,3 +1,4 @@
+<!--
 <div class="container">
     <div class="row">
         <div class="col-lg-3"></div>
@@ -10,4 +11,16 @@
         <div class="colo-lg-3"></div>
     </div>
 </div>
+-->
 
+<div class="container-fluid">
+    <div class="all-categories">
+        <% @articles.each do |article| %>
+            <div class="col-lg-3 box">
+                <h3 class="category-link"><%= link_to article.category.name, article.category, class: 'category' %></h3>
+                <h3 class="content-title"><%= article.title %></h3>
+                <%= image_tag article.image.url, height: "240", width: "334", class: 'all-images' %>
+            </div>
+        <% end %>
+    </div>
+</div>

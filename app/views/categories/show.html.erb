@@ -1,5 +1,5 @@
 <div class="container-fluid">
-
+    <h3 class="count-info">There are <%= "#{ @category.articles.count } #{ "article".pluralize(@category.articles.count) }" %> in <%= "#{ @category.name }" %> category</h3>
     <div class="article-container d-flex flex-row-reverse">
         <% @articles.each do |article| %>
             <div class="art-test ">
@@ -16,6 +16,3 @@
         <% end %>
     </div>
 </div>
-
-<%= link_to 'Category Lists', categories_path %> | 
-<%= link_to 'New Category', new_category_path %>
