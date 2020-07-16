@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
 
         def logged_in_user
             unless logged_in?
-                flash[:notice] = "Try to login!"
+                flash[:notice] = "You need to login!"
                 redirect_to login_path
             end
         end

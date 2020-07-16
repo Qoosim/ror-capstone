@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
     before_action :logged_in_user
+
     include SessionsHelper
 
     def index
@@ -33,7 +34,7 @@ class CategoriesController < ApplicationController
 
     private
         def category_params
-            params.require(:category).permit(:name)
+            params.require(:category).permit(:name, :priority)
         end
 
         def fetch_category
@@ -42,7 +43,7 @@ class CategoriesController < ApplicationController
 
         def logged_in_user
             unless logged_in?
-                flash[:notice] = "Try to login!"
+                flash[:notice] = "You need to login!"
                 redirect_to login_path
             end
         end
