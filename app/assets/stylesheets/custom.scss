@@ -292,9 +292,16 @@ footer {
 
 /* Notice Message */
 .message {
+    width: 20%;
+    border-radius: 10px;
     font-size: 17px;
     text-align: center;
     color: #ff0000;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 600px;
+    z-index: 2;
 }
 
 .overall_box {
@@ -307,13 +314,14 @@ footer {
 }
 
 .feature-cover {
+    margin-top: -3%;
     padding-left: 0;
     padding-right: 0;
 }
 
 .featured_title_text {
     position: absolute;
-    top: 215px;
+    top: 250px;
     width: 100%;
 }
 
