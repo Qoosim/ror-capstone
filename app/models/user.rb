@@ -1,6 +1,5 @@
 class User < ApplicationRecord
   before_save { self.email = email.downcase }
-  acts_as_voter
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i.freeze
 
@@ -12,6 +11,7 @@ class User < ApplicationRecord
 
 
   has_many :articles
+  has_many :votes, dependent: :destroy
 
   has_secure_password
 end

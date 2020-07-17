@@ -5,7 +5,9 @@
 // font-family: 'Oswald', sans-serif;
 // font-family: 'Playfair Display', serif;
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -293,4 +295,37 @@ footer {
     font-size: 17px;
     text-align: center;
     color: #ff0000;
+}
+
+.overall_box {
+    position: relative;
+}
+
+.latest_article_box {
+    position: absolute;
+    bottom: 50px;
+}
+
+.feature-cover {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.featured_title_text {
+    position: absolute;
+    top: 215px;
+    width: 100%;
+}
+
+.featured_article_title {
+    font-weight: bold;
+    color: #ff0000;
+    margin-left: 2.5%;
+}
+
+.featured_article_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 2.5%;
 }

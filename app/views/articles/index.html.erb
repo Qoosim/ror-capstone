@@ -1,10 +1,19 @@
-<div class="container">
-    <div class="row">
-        <% @articles.each do |article| %>
+<div class="container-fluid overall-box">
+    <div class="">
+        <div class="col-lg-12 feature-cover">
+            <%= image_tag featured_article.image.url, height: "600", width: "100%", class: 'all-images' %>
+            <div class="featured_title_text">
+                <h3 class="featured_article_title"><%= featured_article.title %></h3>
+                <h3 class="featured_article_text"><%= featured_article.text %></h3>
+            </div>
+        </div>
+    </div>
+    <div class="latest_article_box">
+        <% @categories.collect do |cate| %>
             <div class="col-lg-3 box">
-                <h3 class="category-link"><%= link_to article.category.name, article.category, class: 'category' %></h3>
-                <h3 class="content-title"><%= article.title %></h3>
-                <%= image_tag article.image.url, height: "230", width: "293", class: 'all-images' %>
+                <h3 class="category-link"><%= link_to cate.name, cate, class: 'category' %></h3>
+                <h3 class="content-title"><%= cate.latest_article.first.title %></h3>
+                <%= image_tag cate.latest_article.first.image.url, height: "240", width: "334", class: 'all-images' %>
             </div>
         <% end %>
     </div>

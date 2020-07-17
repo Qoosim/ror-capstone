@@ -2,3 +2,25 @@
 <% @categories.each do |category| %>
     <%= link_to category.name, articles_path(:cate => category.id) %>
 <% end %>
+
+
+<div class="vote-button">
+    <%= link_to vote_article_path(@article), method: :put do %>
+        Vote 
+        <%= @article.get_upvotes.size %> | 
+    <% end %>
+    <%= link_to unvote_article_path(@article), method: :put do %>
+        Unvote
+        <%= @article.get_downvotes.size %>
+    <% end %>
+</div>
+
+ def upvote
+        @article = fetch_article
+        @article.upvote_from current_user
+    end
+
+    def downvote
+        @article = fetch_article
+        @article.downvote_from current_user
+    end

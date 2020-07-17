@@ -8,9 +8,6 @@ Rails.application.routes.draw do
   resources :users
   resources :categories
   resources :articles do
-    member do
-      put 'vote' => 'articles#upvote'
-      put 'unvote' => 'articles#downvote'
-    end
+    resources :votes, only: [:create, :destroy]
   end
 end

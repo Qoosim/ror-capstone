@@ -7,17 +7,11 @@
             <h3 class="show-title"><%= @article.title %></h3>
             <h3 class="art-author written-by">written by: <%= @article.user.name %></h3>
             <h3 class="show-content"><%= @article.text %></h3>
-
+            
             <div class="vote-button">
-                <%= link_to vote_article_path(@article), method: :put do %>
-                    Vote 
-                    <%= @article.get_upvotes.size %> | 
-                <% end %>
-                <%= link_to unvote_article_path(@article), method: :put do %>
-                    Unvote
-                    <%= @article.get_downvotes.size %>
-                <% end %>
+                <%= vote_unvote(@article) %> <%= "#{@article.votes.count}" %>
             </div>
+            
         </div>
     </div>
     <br>

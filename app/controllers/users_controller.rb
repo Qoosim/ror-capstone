@@ -22,13 +22,12 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             log_in @user
-            flash[:notice] = 'You have signed up successfully!'
-            redirect_to @user
+            flash[:notice] = "An account created for #{ @user.name}"
+            redirect_to :root
         else
             render :new
         end
     end
-
 
     private
         def user_params
