@@ -6,5 +6,5 @@
     <%= f.label :priority %>
     <%= f.number_field :priority, class: 'form-control' %>
 
-    <%= f.submit 'Create new Category', class: 'btn btn-primary catego' %>
+    <%= f.submit yield(:text_button), class: 'btn btn-primary catego' %>
 <% end %>

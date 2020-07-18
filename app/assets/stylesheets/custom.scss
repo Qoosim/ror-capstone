@@ -190,9 +190,9 @@ form {
 
 .login-profile {
     background: #fff;
-    padding: 30px;
+    padding: 20px;
+    padding-top: 2px;
     border-radius: 10px;
-    margin-top: 50px;
     box-shadow: 2px 2px 4px #4f4e4d;
 }
 
@@ -336,4 +336,26 @@ footer {
     font-weight: bold;
     color: #fff;
     margin-left: 2.5%;
+}
+
+/* Image as background */
+
+.new_cate_page {
+    height: 260px;
+    background-image: url('splash11.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-area {
+    margin-top: -1%;
+}
+
+.login-image {
+    height: 260px;
+    background-image: url('splash13.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

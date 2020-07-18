@@ -1,18 +1,16 @@
 <%= provide(:text_button, 'Login')%>
 <div class="container-fluid">
+    <div class="row image-area">
+        <div class="col-lg-12 login-image">
+           
+        </div>
+    </div>
     <div class="row">
-        <div class="col-lg-6">
-            <div class="col-log-12 login-img leftimg">
-            </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4 login-profile">
+            <h2 class="welcome">Welcome Back!</h2>
+            <%= render 'login' %>
         </div>
-        <div class="col-lg-5 login-profile">
-            <div class="row">
-                <div class="col-lg-10">
-                    <h2 class="welcome">Welcome Back!</h2>
-                    <%= render 'login' %>
-                </div>
-                <div class="col-lg-2"></div>
-            </div>
-        </div>
+        <div class="col-lg-4"></div>
     </div>
 </div>
