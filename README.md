@@ -1,4 +1,4 @@
-## 🔐 LiVe+LoCaL - Ruby on Rails Capstone Project
+### 🔐 LiVe+LoCaL - Ruby on Rails Capstone Project
 
 > LiVe+LoCaL is a fabric local website created using Ruby on Rails, based on the design idea by Nelson Sakwa on Behance (https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version).
 
@@ -51,7 +51,7 @@ An Article
 
 Visit `http://localhost:3000/` in your browser to play around the app.
 
-## 🎉 Features
+### 🎉 Features
 
 * It allows users to sign up with name, email, password and password confirmation fields 
 
@@ -69,11 +69,15 @@ Visit `http://localhost:3000/` in your browser to play around the app.
 
 * A user can access all his/her articles by clicking on his/her name on the navigation bar. 
 
-## 🛠️ Built With
+### 🛠️ Built With
 
 This project was built with Ruby on Rails
-* [Ruby](https://www.ruby-lang.org/en/) v2.7.1
-* [Rails](https://rubyonrails.org/) v6.0.3
+* Ruby v2.7.1
+* Rails v6.0.3
+* HTML, CSS
+* Postgres
+* Heroku for deployment
+* Tests with RSpec and Capybara
 
 Additional gems used
 * Bootstrap v4.0
@@ -81,7 +85,7 @@ Additional gems used
 * [Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [Capybara](https://github.com/teamcapybara/capybara)
 
-## 🧪 Testing
+### 🧪 Testing
 To run all the tests, run below command:
 ```
     bundle exec rpsec
@@ -103,7 +107,7 @@ To run a single file, run below command:
 * Rspec controller testing for behaviour
 * Rspec - Capybara testing for features
 
-## 🕹️ Contributions, Issues & Forking
+### 🕹️ Contributions, Issues & Forking
 
 If you have any issues setting up the project or you come across any unintended bugs or problems, please do submit an issue to the [RoR Capstone](https://github.com/Qoosim/ror-capstone/issues) page.
 
@@ -114,18 +118,18 @@ If you want to make your own changes, modifications or improvements to this proj
 4. Push to the branch (git push origin [chosen-name])
 5. Create a new Pull Request
 
-## 👨🏽‍💻 Author
+### 👨🏽‍💻 Author
 **Qoosim AbdulGhaniyy**
 
 - Github: [@Qoosim](https://github.com/Qoosim)
 - Twitter: [@qoosim_ayinde](https://twitter.com/qoosim_ayinde)
 - Linkedin: [qoosim_abdulghaniyy](https://www.linkedin.com/in/qoosim-abdulghaniyy)
 
-## 🧴 Show Your Support
+### 🧴 Show Your Support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+### Acknowledgments
 [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) The designer behind the base idea of the website
 
 [Fernando Bahamondes](https://github.com/ferbaco86) My Microverse brother, friend, master who rendered lots of supports and guidances to ensure the finish of this capstone project. You are a friend indeed
