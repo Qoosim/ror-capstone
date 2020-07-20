@@ -127,6 +127,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) The designer behind the base idea of the website
 
+[Fernando Bahamondes](https://github.com/ferbaco86) My Microverse brother, friend, master who rendered lots of supports and guidances to ensure the finish of this capstone project
+
 [team-65-the-Labradors](https://app.slack.com/client/T47CT8XPG/CQR748HS8?cdn_fallback=2) My Stand Up Team for support and guidance
 
-[Unsplash.com](https://unsplash.com/photos/bbokzTQjB9o) for all Images
+[Unsplash.com](https://unsplash.com/s/photos/technology) for all Images
