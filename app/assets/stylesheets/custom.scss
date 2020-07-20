@@ -219,14 +219,22 @@ form {
 
 
 /* Login and Sign up pages */
-.login-img {
-   background-image: url('asooke-1.jpg');
-   background-size: cover;
-   background-position: center;
-   border-radius: 10px;
-   margin-top: -50px;
-   opacity: 0.5;
+.signup-image {
+    // height: 300px;
+    background-image: url('splash13.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.login-image {
+    height: 260px;
+    background-image: url('splash13.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .leftimg {
     height: 98vh;
@@ -352,10 +360,3 @@ footer {
     margin-top: -1%;
 }
 
-.login-image {
-    height: 260px;
-    background-image: url('splash13.jpg');
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-}

@@ -7,7 +7,7 @@ RSpec.describe "Article", type: :feature do
             User.create(name: 'Qoosim', email: 'qoosim@gmail.com',
                         password: 'password', password_confirmation: 'password')
         end
-        it 'logs in then create an article' do
+        it 'login then create an article' do
             visit root_path
             click_on 'Sign in'
             fill_in 'Email',	with: 'qoosim@gmail.com'

@@ -22,7 +22,7 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             log_in @user
-            flash[:notice] = "An account created for #{ @user.name}"
+            flash[:notice] = "Welcome to local life #{ @user.name}!"
             redirect_to :root
         else
             render :new

@@ -1,9 +1,7 @@
-=begin
-    <div>
-        <h2>Welcome <%= @user.name %></h2>
-    </div>
+<div class="container-fluid">
+    <h3 class="count-info">Hey <%= @user.name %>, you have <%= "#{ @articles.count } #{ "article".pluralize(@articles.count) }" %> created!</h3>
+</div>
 
-    <div>
-        <%= render 'articles/article' %>
-    </div>
-=end
+<div>
+    <%= render 'articles/article' %>
+</div>
