@@ -57,13 +57,13 @@ Visit `http://localhost:3000/` in your browser to play around the app.
 
 * It also allows already signed up users to login to the sites with their email and password.
 
-* Logged in users can create or add category to the existing categories if any.
+* Logged in users can create or add category to the existing categories if any by clicking on the <i>Add Category</i> on the navigation bar.
 
 * Logged in users can create articles under any category
 
 * Title, a content or body, an image and a corresponding category, selected through a select-box are the fields on the article's form.
 
-* The web homepage shows the latest articles by categories and full-width promo of the featured        with the highest number of  votes. 
+* The web homepage shows the four latest articles by categories and full-width of the featured-article with the highest number of  votes. 
 
 * A user can see all the categories by clicking <i>All Categories</i> on the top navigation bar.
 
