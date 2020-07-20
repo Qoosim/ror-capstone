@@ -1,10 +1,10 @@
-# 🔐 LiVe+LoCaL - Ruby on Rails Capstone Project
+## 🔐 LiVe+LoCaL - Ruby on Rails Capstone Project
 
 > LiVe+LoCaL is a fabric local website created using Ruby on Rails, based on the design idea by Nelson Sakwa on Behance (https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version).
 
 ***********
 
-## 💻 Previews
+### 💻 Previews
 Home Page
   ![Home Page](previews/index.png)
 
@@ -17,18 +17,19 @@ Articles under a Category
 An Article
   ![Article](previews/article.png)
 
-## 🚚 Live Demo 
+### 🚚 Live Demo 
 
 * [Lifestyle Artilce](https://so-me-app.herokuapp.com)
 
-## 🛠️ How to run the App
+### 🛠️ How to run the App
 
- - Prerequisites
+#### Prerequisites
+ 
  - To get a local copy up and running, follow below simple steps
 
-Ruby: 2.7.1
-Rails: 6.0.3
-Postgres: >=9.3
+* Ruby: 2.7.1
+* Rails: 6.0.3
+* Postgres: >=9.3
 
 - Install necessary gems with:
 ``` 
