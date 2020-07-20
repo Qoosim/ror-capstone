@@ -12,7 +12,7 @@ All Categories
   ![Categories](previews/all_categories.png)
 
 Articles under a Category
-  ![Category's Articles](previews/category_articles.png)
+  ![Category's Articles](previews/articles.png)
 
 An Article
   ![Article](previews/article.png)
@@ -57,7 +57,7 @@ Visit `http://localhost:3000/` in your browser to play around the app.
 
 * It also allows already signed up users to login to the sites with their email and password.
 
-* Logged in users can create or add category to the existing categories if any by clicking on the <i>Add Category</i> on the navigation bar.
+* Logged in users can create or add category to the existing categories if any by clicking on the <strong><i>Add Category</i></strong> on the navigation bar.
 
 * Logged in users can create articles under any category
 
@@ -65,7 +65,7 @@ Visit `http://localhost:3000/` in your browser to play around the app.
 
 * The web homepage shows the four latest articles by categories and full-width of the featured-article with the highest number of  votes. 
 
-* A user can see all the categories by clicking <i>All Categories</i> on the top navigation bar.
+* A user can see all the categories by clicking <strong><i>All Categories</i></strong> on the top navigation bar.
 
 * A user can access all his/her articles by clicking on his/her name on the navigation bar. 
 
