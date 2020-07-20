@@ -27,8 +27,6 @@ gem 'bcrypt', '~> 3.1.7'
 # It provides a mini view framework for console applications
 gem 'hirb', '~> 0.7.3'
 # Rails gem to allowing records to be votable
-gem 'acts_as_votable', '~> 0.12.1'
-
 gem 'font-awesome-sass', '~> 5.13'
 
 # Use Active Storage variant
