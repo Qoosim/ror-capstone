@@ -25,7 +25,7 @@ RSpec.describe Category, type: :model do
 
     scenario 'returns the latest created article' do
       cate1 = Category.create(name: 'Tech', priority: 1)
-      article1 = cate1.articles.create!(title: 'Ruby', text: 'first content', image: "img[src=#{/spec/image/splash7.jpg}]",
+      article1 = cate1.articles.create!(title: 'Ruby', text: 'first content', image: "img[src=#{/spec/splash11.jpg}]",
                                       user_id: @user.id, created_at: '2020-07-17')
       article2 = cate1.articles.create!(title: 'Rails', text: 'second content',
                                     user_id: @user.id, created_at: '2020-07-18')
