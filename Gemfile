@@ -74,6 +74,7 @@ end
 group :production do
   # postgre SQL GEM
   gem 'rails_12factor', '~> 0.0.3'
+  gem 'fog', '1.42' 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
