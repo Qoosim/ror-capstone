@@ -24,7 +24,7 @@ An Article
 ## 🛠️ How to run the App
 
  - Prerequisites
- To get a local copy up and running, follow below simple steps
+ - To get a local copy up and running, follow below simple steps
 
 Ruby: 2.7.1
 Rails: 6.0.3
@@ -109,7 +109,7 @@ If you have any issues setting up the project or you come across any unintended 
 If you want to make your own changes, modifications or improvements to this project, go ahead and Fork it!
 1. [Fork it](https://github.com/Qoosim/ror-capstone/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
-3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
+3. Commit your changes (git commit -m 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
 5. Create a new Pull Request
 
@@ -127,8 +127,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) The designer behind the base idea of the website
 
-[Fernando Bahamondes](https://github.com/ferbaco86) My Microverse brother, friend, master who rendered lots of supports and guidances to ensure the finish of this capstone project
+[Fernando Bahamondes](https://github.com/ferbaco86) My Microverse brother, friend, master who rendered lots of supports and guidances to ensure the finish of this capstone project. You are a friend indeed
 
-[team-65-the-Labradors](https://app.slack.com/client/T47CT8XPG/CQR748HS8?cdn_fallback=2) My Stand Up Team for support and guidance
+[Team-65-the-Labradors](https://app.slack.com/client/T47CT8XPG/CQR748HS8?cdn_fallback=2) My Stand Up Team for support and guidance
 
-[Unsplash.com](https://unsplash.com/s/photos/technology) for all Images
+[Unsplash.com](https://unsplash.com/s/photos/technology) For all Images
