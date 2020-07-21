@@ -24,3 +24,5 @@
         @article = fetch_article
         @article.downvote_from current_user
     end
+
+# image: Rack::Test::UploadedFile.new(File.open(File.join(Rails.root, '/app/spec/image/splash7.jpg'))),
