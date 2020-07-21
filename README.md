@@ -21,7 +21,7 @@ An Article
    [Lifestyle Articles](https://life-in-local.herokuapp.com)
 
 ### 🔗 Presentation Link
-    [RoR Capstone Representation](https://www.loom.com/share/cc7d62fae423441ebc03cc7514bdac5c)
+    [RoR Capstone Representation](shorturl.at/mouEU)
 
 ### 🛠️ How to run the App
 
