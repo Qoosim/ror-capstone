@@ -2,7 +2,7 @@
     <div class="all-categories">
         <% @categories.collect do |cate| %>
             <div class="col-lg-3 box">
-                <h3 class="category-link"><%= link_to cate.name, cate, class: 'category' %></h3>
+                <h3 class="category-link"><%= link_to cate.name, cate, class: 'category' %> <div class="count-color"><%= "#{cate.articles.count}" %></div></h3>
                 <h3 class="content-title"><%= cate.articles.take.title %></h3>
                 <%= image_tag cate.articles.take.image.url, height: "240", width: "334", class: 'all-images' %>
             </div>
