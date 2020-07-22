@@ -14,7 +14,6 @@ class CategoriesController < ApplicationController
 
     def show
         @category = fetch_category
-        # @articles = Article.where(category_id: fetch_category)
         @articles = @category.articles
     end
 

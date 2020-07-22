@@ -24,3 +24,5 @@
         @article = fetch_article
         @article.downvote_from current_user
     end
+
+# @articles = Article.where(category_id: fetch_category)

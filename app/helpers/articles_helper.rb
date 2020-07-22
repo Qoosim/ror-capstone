@@ -17,17 +17,17 @@ module ArticlesHelper
         article = featured_article
         if article.class == Article
             render "if_not_nil", featured_article: article
-        # else
-        #     render "if_nil", featured_article: article
+        else
+            render "if_nil", featured_article: article
         end
     end
 
     def display_latest_articles(cate)
-            if cate.articles.first.nil?
-                # render "partial_1"
-            else
-                render "partial_2", cate: cate
-            end
+        if cate.articles.first.nil?
+            # render "partial_1"
+        else
+            render "partial_2", cate: cate
+        end
     end
 
 end
