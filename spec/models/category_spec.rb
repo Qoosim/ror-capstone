@@ -18,9 +18,9 @@ RSpec.describe Category, type: :model do
   
   context "Category Scope" do
     subject { Category.create(name: 'Tech', priority: 1) }
-    let(:article1) { subject.articles.create(title: 'Ruby', text: 'first content', image: Rack::Test::UploadedFile.new(File.open(File.join(Rails.root, '/app/spec/image/splash7.jpg'))),
+    let(:article1) { subject.articles.create(title: 'Ruby', text: 'first content', image: Rack::Test::UploadedFile.new(File.open(File.join(Rails.root, '/spec/image/splash7.jpg'))),
       user_id: @user.id, created_at: '2020-07-17') }
-      let(:article2) { subject.articles.create(title: 'Rails', text: 'second content', image: Rack::Test::UploadedFile.new(File.open(File.join(Rails.root, '/app/spec/image/splash8.jpg'))),
+      let(:article2) { subject.articles.create(title: 'Rails', text: 'second content', image: Rack::Test::UploadedFile.new(File.open(File.join(Rails.root, '/spec/image/splash8.jpg'))),
         user_id: @user.id, created_at: '2020-07-18') }
       
     scenario 'returns the category with highest category' do

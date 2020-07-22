@@ -10,7 +10,7 @@ RSpec.describe "User", type: :feature do
             fill_in 'Password confirmation',	with: 'password'
             click_on  'Sign up'
             sleep(3)
-            expect(page).to have_content("No Article available")  
+            expect(page).to have_content("No featured article to display!")  
         end
     end
     
