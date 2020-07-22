@@ -9,4 +9,17 @@ module ArticlesHelper
         end
     end
 
+    def display_latest_articles
+        @categories.collect do |cate|
+            if cate.articles.first.nil?
+                flash[:notice] = "No Article created!"
+            else
+                link_to(link_to cate.name, cate, class: 'category')
+                cate.latest_article.first.title
+                image_tag(cate.latest_article.first.image.url,
+                                        height: "240", width: "334", class: 'all-images')
+            end
+        end
+    end
+
 end

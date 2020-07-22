@@ -42,9 +42,6 @@ class CategoriesController < ApplicationController
         end
 
         def logged_in_user
-            unless logged_in?
-                flash[:notice] = "You need to login!"
-                redirect_to login_path
-            end
+            redirect_to(login_path, notice: 'You need to login!') unless logged_in?
         end
 end
