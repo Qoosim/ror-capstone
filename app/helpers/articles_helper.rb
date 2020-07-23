@@ -23,8 +23,8 @@ module ArticlesHelper
     end
 
     def display_latest_articles(cate)
-        if cate.articles.first.nil?
-            # render "partial_1"
+        if cate.articles.empty?
+ 
         else
             render "partial_2", cate: cate
         end

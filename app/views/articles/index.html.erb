@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="latest_article_box">
-        <% @categories.collect do |cate| %>
+        <% @categories.each do |cate| %>
             <%= display_latest_articles(cate) %>
         <% end %>
 
