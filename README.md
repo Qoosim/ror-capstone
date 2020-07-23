@@ -130,12 +130,3 @@ If you want to make your own changes, modifications or improvements to this proj
 ### 🧴 Show Your Support
 
 Give a ⭐️ if you like this project!
-
-### Acknowledgments
-[Nelson Sakwa](https://www.behance.net/sakwadesignstudio) The designer behind the base idea of the website
-
-[Fernando Bahamondes](https://github.com/ferbaco86) My Microverse brother, friend, master who rendered lots of supports and guidances to ensure the finish of this capstone project. You are a friend indeed
-
-[Team-65-the-Labradors](https://app.slack.com/client/T47CT8XPG/CQR748HS8?cdn_fallback=2) My Stand Up Team for support and guidance
-
-[Unsplash.com](https://unsplash.com/s/photos/technology) For all Images
