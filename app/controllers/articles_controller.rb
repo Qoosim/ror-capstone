@@ -1,18 +1,17 @@
 class ArticlesController < ApplicationController
-    include SessionsHelper
+  include SessionsHelper
 
-    def index
-        @articles = Article.all
-        @categories = Category.cate_priority
-    end
+  def index
+      @articles = Article.all
+      @categories = Category.cate_priority
+  end
 
-    def new
-        @article = current_user.articles.build
-    end
+  def new
+      @article = current_user.articles.build
+  end
 
-    def show
-        @article = fetch_article
-    end
+  def show
+      @article = fetch_article
   end
 
   def update
