@@ -5,5 +5,4 @@ class Article < ApplicationRecord
   validates :title, :text, :image, :user_id, :category_id, presence: true
 
   mount_uploader :image, ImageUploader
-
 end
