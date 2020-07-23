@@ -25,4 +25,8 @@
         @article.downvote_from current_user
     end
 
+<<<<<<< HEAD
 # image: Rack::Test::UploadedFile.new(File.open(File.join(Rails.root, '/app/spec/image/splash7.jpg'))),
+=======
+# @articles = Article.where(category_id: fetch_category)
+>>>>>>> 1a3c0623d5a7525e928a1c94089f7d291fdefd65

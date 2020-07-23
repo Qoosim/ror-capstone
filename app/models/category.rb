@@ -5,7 +5,14 @@ class Category < ApplicationRecord
 
   scope :cate_priority, -> { order('priority desc') }
 
-  # scope :latest_article, -> { order('created_at desc') }
+    scope :cate_priority, -> { order('priority desc') }
+
+    scope :all_articles, lambda { |category_id| where(id: category_id).includes(:articles) }
+
+
+    def latest_article
+        articles.order(created_at: :desc)
+    end
 
   def latest_article
     articles.order(created_at: :desc)

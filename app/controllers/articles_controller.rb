@@ -1,30 +1,17 @@
 class ArticlesController < ApplicationController
-  include SessionsHelper
+    include SessionsHelper
 
-  def index
-    @articles = Article.all
-    @categories = Category.cate_priority.first(4)
-  end
+    def index
+        @articles = Article.all
+        @categories = Category.cate_priority
+    end
 
-  def new
-    @article = current_user.articles.build
-  end
+    def new
+        @article = current_user.articles.build
+    end
 
-  def show
-    @article = fetch_article
-  end
-
-  def edit
-    @article = fetch_article
-  end
-
-  def create
-    @article = current_user.articles.build(article_params)
-    if @article.save
-      flash[:notice] = 'Article created!'
-      redirect_to article_path(@article)
-    else
-      render :new
+    def show
+        @article = fetch_article
     end
   end
 
