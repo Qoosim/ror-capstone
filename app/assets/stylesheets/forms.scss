@@ -1,0 +1,73 @@
+@import 'custom';
+
+/* form */
+
+input, textarea, .uneditable-input {
+    border: 1px solid #bbb;
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  
+select {
+    margin-bottom: 1.5rem;
+}
+  
+input {
+    height: auto !important;
+}
+  
+form {
+    width: 100%;
+}
+
+.login-profile {
+    background: #fff;
+    padding: 20px;
+    padding-top: 2px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #4f4e4d;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article-form {
+    background: #fff;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.new {
+    margin-bottom: 40px; 
+}
+
+
+/* Login and Sign up pages */
+
+.signup-image {
+    background-image: url('splash13.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-image {
+    height: 260px;
+    background-image: url('splash11.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.leftimg {
+    height: 98vh;
+}

@@ -1,0 +1,158 @@
+@import 'custom';
+
+.art-author {
+    font-size: 15px;
+    font-weight: normal;
+    color: #4f4e4d;
+}
+
+.art-text {
+    font-size: 15px;
+    margin-top: 50px;
+    color: #000;
+}
+
+
+/* Notice Message */
+.message {
+    width: 20%;
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+    color: #ff0000;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 600px;
+    z-index: 2;
+}
+
+.overall_box {
+    position: relative;
+}
+
+.latest_article_box {
+    position: absolute;
+    bottom: 50px;
+}
+
+.feature-cover {
+    margin-top: -3%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.featured_title_text {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+}
+
+.featured_article_title {
+    font-weight: bold;
+    color: #ff0000;
+    margin-left: 2.5%;
+}
+
+.featured_article_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 2.5%;
+}
+
+/* Image as background */
+
+.new_cate_page {
+    height: 260px;
+    background-image: url('splash11.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-area {
+    margin-top: -1%;
+}
+
+.count-color {
+    font-size: 14px;
+    width: 17px;
+    height: 17px;
+    background: #fff;
+    border-radius: 50%;
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+}
+
+.content-title {
+    font-size: 18px;
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.link-title {
+    color: #fff;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+}
+
+.art-test {
+    display: flex;
+    width: 50%;
+}
+
+.art-test:nth-child(-n+2) {
+   flex-direction: row-reverse !important;
+}
+
+.side-image {
+    padding-left: 0 !important;
+}
+
+.show-title {
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: red;
+}
+
+.vote-button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.written-by {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+
+.show-content {
+    font-size: 16px;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+
+.text-box {
+    background: #fff;
+    width: 50%;
+    height: 368px;
+}
+

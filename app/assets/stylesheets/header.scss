@@ -1,0 +1,51 @@
+@import 'custom';
+
+/* Navigation Style*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #4f4e4d;
+}
+
+
+.shift {
+    margin-right: 10px;
+}
+
+.logo-like {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+}
+
+#circle {
+    width: 7px;
+    height: 7px;
+    background: red;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: -78px;
+}
+
+.logo {
+    color: #212121;
+    font-family: 'Playfair Display', serif;
+    &:hover {
+        text-decoration: none;
+        color: #4f4e4d;
+    }
+}
+
+.bottom-logo {
+    color: #fff;
+}

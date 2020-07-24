@@ -14,6 +14,16 @@ class ArticlesController < ApplicationController
       @article = fetch_article
   end
 
+  def create
+    @article = current_user.articles.build(article_params)
+
+    if @article.save
+      redirect_to(@article, notice: 'An article was created!')
+    else
+      render :new
+    end
+  end
+
   def update
     @article = fetch_article
     if @article.update(article_params)
