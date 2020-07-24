@@ -25,6 +25,7 @@
         @article.downvote_from current_user
     end
 
+<<<<<<< HEAD
 
  <% if cate.articles.first.nil? %>
                 flash[:notice] = "No Article created!"
@@ -35,3 +36,6 @@
                     <%= image_tag cate.latest_article.first.image.url, height: "240", width: "334", class: 'all-images' %>
                 </div>
             <% end %>
+=======
+# @articles = Article.where(category_id: fetch_category)
+>>>>>>> 1e47ad6f3b0cc48eb1fed1a8e40eca92a2de99a9

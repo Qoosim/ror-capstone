@@ -2,7 +2,7 @@ class VotesController < ApplicationController
     include SessionsHelper
 
     def create
-        @vote = current_user.votes.new(article_id: params[:article_id])
+        @vote = current_user.votes.new(article_id: vote_params)
         @article = Article.find(params[:article_id])
     
         if @vote.save
@@ -13,8 +13,8 @@ class VotesController < ApplicationController
     end
     
     def destroy
-      vote = Vote.find_by(id: params[:id], user: current_user, article_id: params[:article_id])
-      @article = Article.find(params[:article_id])
+      vote = Vote.find_by(user: current_user, article_id: vote_params)
+      @article = Article.find(vote_params)
       if vote
         vote.destroy
         redirect_to(article_path(@article), notice: 'You unvoted this article.')
@@ -22,4 +22,10 @@ class VotesController < ApplicationController
         redirect_to(articles_path, notice: 'You cannot unvote article that you did not vote before.')
       end
     end
+
+
+    private
+      def vote_params
+        params.require(:article_id)
+      end
 end

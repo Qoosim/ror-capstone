@@ -20,9 +20,6 @@ An Article
 ### 🚚 Live Demo 
    [Lifestyle Articles](https://life-in-local.herokuapp.com)
 
-### 🔗 Presentation Link
-    [RoR Capstone Representation](https://www.loom.com/share/cc7d62fae423441ebc03cc7514bdac5c)
-
 ### 🛠️ How to run the App
 
 #### Prerequisites
@@ -130,7 +127,6 @@ If you want to make your own changes, modifications or improvements to this proj
 ### 🧴 Show Your Support
 
 Give a ⭐️ if you like this project!
-
 
 ### 🤝 Acknowledgments
 [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) The designer behind the base idea of the website

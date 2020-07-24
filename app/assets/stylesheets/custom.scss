@@ -103,6 +103,10 @@ body {
     z-index: 2;
 }
 
+.link-title {
+    color: #fff;
+}
+
 .article-container {
     display: flex;
     flex-wrap: wrap;
@@ -231,7 +235,7 @@ form {
 
 .login-image {
     height: 260px;
-    background-image: url('splash13.jpg');
+    background-image: url('splash11.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;

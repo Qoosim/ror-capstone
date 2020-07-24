@@ -1,29 +1,12 @@
 <div class="container-fluid overall-box">
     <div class="">
-        <div class="col-lg-12 feature-cover">
-            <% if featured_article.class == Article %>
-                <%= image_tag featured_article.image.url, height: '580px', width: '100%', class: 'all-images' %>
-                <div class="featured_title_text">
-                    <h3 class="featured_article_title"><%= featured_article.title %></h3>
-                    <!-- <h3 class="featured_article_text"><%= featured_article.text %></h3> -->
-                </div>
-            <% else %> 
-                <h3><%= featured_article %></h3>
-            <% end %>
+        <div class="col-lg-12 feature-cover">    
+           <%= articles_exist %>
         </div>
     </div>
     <div class="latest_article_box">
-        <!-- <% @categories.collect do |cate| %>
-            <% if cate.articles.first.nil? %>
-                flash[:notice] = "No Article created!"
-            <% else %>
-                <div class="col-lg-3 box">
-                    <h3 class="category-link"><%= link_to cate.name, cate, class: 'category' %></h3>
-                    <h3 class="content-title"><%= cate.latest_article.first.title %></h3>
-                    <%= image_tag cate.latest_article.first.image.url, height: "240", width: "334", class: 'all-images' %>
-                </div>
-            <% end %>
-        <% end %> -->
-        <%= display_latest_articles %>
+        <% @categories.each do |cate| %>
+            <%= display_latest_articles(cate) %>
+        <% end %>
     </div>
 </div>
