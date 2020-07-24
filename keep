@@ -25,7 +25,6 @@
         @article.downvote_from current_user
     end
 
-<<<<<<< HEAD
 
  <% if cate.articles.first.nil? %>
                 flash[:notice] = "No Article created!"
@@ -36,6 +35,7 @@
                     <%= image_tag cate.latest_article.first.image.url, height: "240", width: "334", class: 'all-images' %>
                 </div>
             <% end %>
-=======
-# @articles = Article.where(category_id: fetch_category)
->>>>>>> 1e47ad6f3b0cc48eb1fed1a8e40eca92a2de99a9
+
+
+
+This pull request is about my ruby on rails capstone project which is based on the title Lifestyle Article where users can create accounts, login to the site, create categories and articles. Logged in users can as well vote articles created by other users,
