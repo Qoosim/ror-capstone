@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
     @article = current_user.articles.build(article_params)
 
     if @article.save
-      redirect_to(@article, notice: 'Article created!')
+      redirect_to(@article, notice: 'An article was created!')
     else
       render :new
     end
