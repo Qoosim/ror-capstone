@@ -1,0 +1,28 @@
+@import 'custom';
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.space {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.text-bottom,
+.bottom-logo {
+    color: #d3cece;
+}
+
+.text-bottom {
+    font-size: 15px;
+}
+
+.social-connect {
+    margin-right: 20px;
+}
