@@ -10,7 +10,7 @@
                     <h3 class="art-text"><%= article.text %></h3>
                 </div>
                 <div class="col-lg-6 side-image">
-                    <%= image_tag article.image.url, width: '105%', height: '260px' %>
+                    <%= cl_image_tag article.image.url, width: '105%', height: '260px' %>
                 </div>
             </div>
         <% end %>
