@@ -1,18 +1,18 @@
 ---
 development:
-  cloud_name: qoosim
+  cloud_name: 'qoosim'
   api_key: '825939732582576'
   api_secret: VGSqOCooKsuJZTVZNHxFQ9EPGiU
   enhance_image_tag: true
   static_file_support: false
 production:
-  cloud_name: qoosim
+  cloud_name: 'qoosim'
   api_key: '825939732582576'
   api_secret: VGSqOCooKsuJZTVZNHxFQ9EPGiU
   enhance_image_tag: true
   static_file_support: true
 test:
-  cloud_name: qoosim
+  cloud_name: 'qoosim'
   api_key: '825939732582576'
   api_secret: VGSqOCooKsuJZTVZNHxFQ9EPGiU
   enhance_image_tag: true
