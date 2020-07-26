@@ -13,5 +13,4 @@ RSpec.describe "User", type: :feature do
             expect(page).to have_content("No featured article to display!")  
         end
     end
-  end
 end
