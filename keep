@@ -39,3 +39,13 @@
 
 
 This pull request is about my ruby on rails capstone project which is based on the title Lifestyle Article where users can create accounts, login to the site, create categories and articles. Logged in users can as well vote articles created by other users,
+
+
+<!--
+<ul class="nav navbar-nav navbar-right">
+    <li><%= link_to 'Sign in', login_path, class: 'nav-link' if !logged_in? %></li>
+    <li><%= link_to 'Register', new_user_path, class: 'nav-link shift' if !logged_in? %></li>
+    <li><%= link_to 'New Article', new_article_path, class: 'nav-link' if logged_in? %></li>
+    <li><%= link_to current_user.name, user_path(current_user), class: 'nav-link' if logged_in? %></li>
+    <li><%= link_to 'Log out', logout_path, method: :delete, class: 'nav-link shift' if logged_in? %></li>
+</ul>

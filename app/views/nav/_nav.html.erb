@@ -1,0 +1,19 @@
+<nav class="navbar-fixed-top navbar-expand-lg navbar-light navigation", style="background: #ebd59b;">
+    <div class="logo-like">
+        <h3><%= link_to 'LiVe+LoCaL', root_path, class: 'logo' %></h3>
+        <div id="circle"></div>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><%= link_to 'Add Category', new_category_path, class: 'nav-link' %></li>
+        <li><%= link_to 'All Categories', categories_path, class: 'nav-link' %></li>
+    </ul>
+    <div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><%= display_signin %></li>
+            <li><%= display_register %></li>
+            <li><%= display_new_article %></li>
+            <li><%= display_current_user %></li>
+            <li><%= display_logout%></li>
+        </ul>
+    </div>
+</nav>
