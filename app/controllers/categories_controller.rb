@@ -41,14 +41,6 @@ class CategoriesController < ApplicationController
     Category.find(params[:id])
   end
 
-  def category_params
-    params.require(:category).permit(:name, :priority)
-  end
-
-  def fetch_category
-    Category.find(params[:id])
-  end
-
   def logged_in_user
     redirect_to(login_path, notice: 'You need to login!') unless logged_in?
   end
