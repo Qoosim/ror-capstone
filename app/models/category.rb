@@ -12,8 +12,4 @@ class Category < ApplicationRecord
   def latest_article
     articles.order(created_at: :desc)
   end
-
-  def latest_article
-    articles.order(created_at: :desc)
-  end
 end
