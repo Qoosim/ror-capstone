@@ -33,8 +33,8 @@ gem 'font-awesome-sass', '~> 5.13'
 # gem 'image_processing', '~> 1.2'
 
 gem 'carrierwave', '~> 2.1'
-gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 gem 'cloudinary', '~> 1.16', '>= 1.16.1'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

@@ -2,16 +2,16 @@ class ArticlesController < ApplicationController
   include SessionsHelper
 
   def index
-      @articles = Article.all
-      @categories = Category.cate_priority
+    @articles = Article.all
+    @categories = Category.cate_priority
   end
 
   def new
-      @article = current_user.articles.build
+    @article = current_user.articles.build
   end
 
   def show
-      @article = fetch_article
+    @article = fetch_article
   end
 
   def create

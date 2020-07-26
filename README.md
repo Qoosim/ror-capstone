@@ -41,6 +41,9 @@ An Article
     rails db:migrate
     rails db:seed
 ```
+- Create an account in Cloudinary(it is for free), confirm your e-mail and sign in.
+- Go to your Cloudinary Console and copy your cloud_name api_keys, api_secret and into cloudinary.yml file   
+(which is in the config directory).
 
 - Start server with:
     
