@@ -14,8 +14,8 @@ RSpec.describe Category, type: :model do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:priority) }
   end
-  
-  context "Category Scope" do  
+
+  context 'Category Scope' do
     scenario 'returns the category with highest category' do
       cate1 = Category.create(name: 'Tech', priority: 1)
       cate2 = Category.create(name: 'Book', priority: 2)

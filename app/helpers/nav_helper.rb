@@ -1,10 +1,10 @@
 module NavHelper
   def display_signin
-    link_to 'Sign in', login_path, class: 'nav-link' if !logged_in?
+    link_to 'Sign in', login_path, class: 'nav-link' unless logged_in?
   end
 
   def display_register
-    link_to 'Register', new_user_path, class: 'nav-link shift' if !logged_in?
+    link_to 'Register', new_user_path, class: 'nav-link shift' unless logged_in?
   end
 
   def display_new_article

@@ -12,10 +12,10 @@ class CategoriesController < ApplicationController
     @category = Category.new
   end
 
-    def show
-        @category = fetch_category
-        @articles = @category.articles
-    end
+  def show
+    @category = fetch_category
+    @articles = @category.articles
+  end
 
   def edit
     @category = fetch_category
@@ -41,16 +41,15 @@ class CategoriesController < ApplicationController
     Category.find(params[:id])
   end
 
-    private
-        def category_params
-            params.require(:category).permit(:name, :priority)
-        end
+  def category_params
+    params.require(:category).permit(:name, :priority)
+  end
 
-        def fetch_category
-            Category.find(params[:id])
-        end
+  def fetch_category
+    Category.find(params[:id])
+  end
 
-        def logged_in_user
-            redirect_to(login_path, notice: 'You need to login!') unless logged_in?
-        end
+  def logged_in_user
+    redirect_to(login_path, notice: 'You need to login!') unless logged_in?
+  end
 end

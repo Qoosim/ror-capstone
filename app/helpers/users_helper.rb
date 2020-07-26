@@ -1,7 +1,5 @@
 module UsersHelper
-    def display_notice
-        if notice
-            flash.notice
-        end
-    end
+  def display_notice
+    flash.notice if notice
+  end
 end
